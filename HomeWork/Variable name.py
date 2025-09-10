@@ -1,7 +1,7 @@
 import keyword
 
 
-# my_variable = input('Enter your variable: ')
+my_variable = str(input('Enter your variable: '))
 all_words = keyword.kwlist
 all_words2 = keyword
 
