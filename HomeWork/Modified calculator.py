@@ -15,10 +15,10 @@ while True:
          print("Result:", first_number / next_number)
     else:
         print("Incorrect action")
-    answer = str(input('Do you want to continue?: (y - n): '))
-    if answer.startswith('n'):
-        break
-    elif answer.startswith('y'):
+    answer = str(input('Do you want to continue?: (yes): '))
+    if answer.startswith('y'):
         continue
+    elif answer.startswith(''):
+        break
     else:
         print('Try again')
