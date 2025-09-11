@@ -9,7 +9,7 @@ if my_variable in all_words:
 elif any(symbol.isupper() for symbol in my_variable):
     print("FALSE")
 elif any(symbol in r"!\"#$%&'()*+,-./:;<=>?@[\]^`{|}~" for symbol in my_variable):
-    print("False")
+    print("FALSE")
 elif my_variable.count("_") > 1:
     print("FALSE")
 elif my_variable[0].isdigit():
