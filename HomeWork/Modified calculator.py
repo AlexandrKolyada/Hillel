@@ -15,8 +15,8 @@ while True:
          print("Result:", first_number / next_number)
     else:
         print("Incorrect action")
-    answer = str(input('Do you want to continue?: (yes): '))
-    if answer.startswith('y'):
+    answer = str(input('Do you want to continue? (y/yes): ').lower())
+    if answer in ("y", "yes"):
         continue
     elif answer.startswith(''):
         break
