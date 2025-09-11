@@ -1,6 +1,5 @@
-symbol_for_delete = ".,/?!-/ "
-table = str.maketrans('', '', symbol_for_delete)
+import string
+
 my_string = input("Enter you text: ")
-modify_string = my_string[0:140].title().translate(table)
-format_list = "#{}"
+modify_string = my_string[:140].title().translate(str.maketrans("", "", string.punctuation)).replace(" ", "")
 print(f"#{modify_string}")
