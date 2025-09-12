@@ -12,7 +12,7 @@ elif any(symbol in r"!\"#$%&'()*+,-./:;<=>?@[\]^`{|}~" for symbol in my_variable
     print("FALSE")
 elif " " in my_variable:
     print("FALSE")
-elif "__" in my_variable:
+elif my_variable.startswith("__"):
     print("FALSE")
 elif not my_variable:
     print("FALSE")
