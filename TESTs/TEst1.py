@@ -1,12 +1,28 @@
-orange_price = 17.5
-my_money = 14
-tea_price = 14
-if my_money > orange_price:
-    print("I buy orange")
-else:
-		# Вкладений умовний оператор if зі своїм блоком else
-    if my_money >= tea_price:
-        print("Not orange, just tea")
+import keyword
+
+
+my_variable = "some_super_pupper_value"
+all_words = keyword.kwlist
+
+for i in range(0, len(my_variable[1])):
+    if my_variable[i] == my_variable[i-1]:
+        break
     else:
-        print("I buy apple")
-print("The end")
+        print("FALSE")
+
+# if my_variable in all_words:
+#     print("FALSE")
+# elif any(symbol.isupper() for symbol in my_variable):
+#     print("FALSE")
+# elif any(symbol in r"!\"#$%&'()*+,-./:;<=>?@[\]^`{|}~" for symbol in my_variable):
+#     print("FALSE")
+# elif " " in my_variable:
+#     print("FALSE")
+# elif my_variable.count("_") > 1:
+#     print("FALSE")
+# elif not my_variable:
+#     print("FALSE")
+# elif my_variable[0].isdigit():
+#     print("FALSE")
+# else:
+#     print('TRUE')
