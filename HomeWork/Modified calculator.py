@@ -16,9 +16,9 @@ while True:
     else:
         print("Incorrect action")
     answer = str(input('Do you want to continue? (y/yes): ').lower())
-    if answer not in ("y", "yes"):
+    if answer in ("y", "yes"):
+        continue
+    elif answer.startswith(''):
         break
-    # elif answer.startswith(''):
-    #     break
-    # else:
-    # print('Try again')
+    else:
+        print('Try again')
