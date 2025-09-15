@@ -11,3 +11,4 @@ for char in letters[start_index:end_index+1]:
         print(char)
     else:
         print(char, end="")
+print()
