@@ -1,7 +1,7 @@
 def correct_sentence (text):
-
     if text.endswith('.'):
-        return str(text).capitalize()
+        return text[0].upper() + text[1:]
     else:
-        return (f"{text}.").capitalize()
+        return (f"{text[0].upper() + text[1:]}.")
+print(correct_sentence("greetings, friends"))
 
