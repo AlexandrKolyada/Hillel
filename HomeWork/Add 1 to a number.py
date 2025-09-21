@@ -1,5 +1,6 @@
 
 number = input("Enter your number: ")
-str_list = number.split(" ")
 
-print(str_list)
+gen = [int(digit) for digit in number]
+
+print(gen)

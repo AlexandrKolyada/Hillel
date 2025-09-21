@@ -1,7 +1,7 @@
-def common_elements(set):
+def common_elements(my_set):
 
     my_list = [i for i in range(0, 100) if i % 3 == 0 and i % 5 ==0]
-    set = set(my_list)
-    return (set)
+    my_set = set(my_list)
+    return (my_set)
 
-print(common_elements(set))
+print(common_elements(my_set=""))
