@@ -1,6 +1,3 @@
-from unicodedata import digit
-
-
 def is_even(digit):
 
     """Функція is_even  повертає True якщо число парне, і False якщо число непарне."""
