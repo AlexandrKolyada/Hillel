@@ -2,15 +2,16 @@ def pow (x):
     return  x ** 2
 
 def some_gen(begin, end, func):
+
     """
          begin: перший елемент послідовності
          end: кількість елементів у послідовності
          func: функція, яка формує значення для послідовності
         """
-    curr = begin
+
     for i in range(end):
-        yield curr
-        curr = func(curr)
+        yield begin
+        begin = func(begin)
 
 
 from inspect import isgenerator
