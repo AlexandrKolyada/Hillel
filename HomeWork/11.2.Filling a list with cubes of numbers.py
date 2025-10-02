@@ -1,6 +1,10 @@
 def generate_cube_numbers(end):
 
-    # i = 2
+    """
+    :param end: зазначена величина вказана юзером
+    :return: набір числ у кубі
+    """
+
     for i in range(2, end + 1):
         cube = i ** 3
         if cube >= end:
