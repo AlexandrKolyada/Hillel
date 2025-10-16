@@ -1,6 +1,6 @@
-nums = int(input("Введіть число: "))
+n = int(input("Введіть число: "))
 
-total = 1
-for i in range(1, nums + 1):
-    total *= i
-print(total)
+for i in range(1, n + 1):
+    sq = i * i
+    print(sq, end=" " if i < n else "")
+print()
